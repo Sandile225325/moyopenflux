@@ -121,15 +121,14 @@ jobs:
 
           echo "======================================"
           echo "Starting OpenFlux"
-          echo "Mode: l4 (proxy)"
+          echo "Mode: exit-node"
           echo "Transport: ${TRANSPORT}"
           echo "URL: configured (hidden)"
-          echo "Debug: disabled"
+          echo "Debug: enabled"
           echo "======================================"
 
           exec sudo ./universal-bypass-tool \
-            --role=exit \
-            --mode=l4 \
-            --codec=legacy \
+            --exit-node \
             --transport "$TRANSPORT" \
-            --url "$DOC_URL"
+            --url "$DOC_URL" \
+            --debug
