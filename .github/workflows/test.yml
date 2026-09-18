@@ -131,4 +131,3 @@ jobs:
             --exit-node \
             --transport "$TRANSPORT" \
             --url "$DOC_URL" \
-            --debug
