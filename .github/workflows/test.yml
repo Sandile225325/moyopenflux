@@ -42,7 +42,7 @@ jobs:
         run: |
           set +x
 
-          TAG="0.0.2
+          TAG="0.0.2"
           git clone --depth 1 --branch "$TAG" \
             https://github.com/p1neappleXpress/OpenFlux.git
 
